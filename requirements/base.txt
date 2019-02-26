@@ -3,7 +3,7 @@ pytest==4.3.0
 pyOpenSSL==19.0.0
 passlib==1.7.1
 psycopg2-binary==2.7.7
-Django==1.11.16
+Django==1.11.20
 django-extensions==2.1.5
 django-werkzeug-debugger-runserver==0.3.1
 django-allauth==0.38.0
