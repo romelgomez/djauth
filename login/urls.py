@@ -17,12 +17,13 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
 from login.views import UserViewset 
+from login.views import home
 
 router = routers.DefaultRouter()
 router.register('users', UserViewset)
 
 urlpatterns = [
-    url(r'^/', include(router.urls)),    
+    url(r'^$', home),
+    url(r'^api/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
-    # url(r'^accounts/', include('allauth.urls')),
 ]

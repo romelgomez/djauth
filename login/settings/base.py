@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'login',
     'firebase_auth',
     'sslserver',
     'corsheaders',
 
     'allauth',
+    'rest_framework',
     'allauth.account',
     'allauth.socialaccount',    
     'allauth.socialaccount.providers.facebook',
